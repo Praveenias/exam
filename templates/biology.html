@@ -1,0 +1,186 @@
+{% load static%}
+
+<html>
+    <head>
+        <title>Testpress</title>
+        <link href="{% static 'biology.css'%}" rel="stylesheet" type="text/css" media="all" />
+        <script src="https://stackpath.bootstrapcdn.com /bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+
+<body>
+<div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-10 col-lg-10">
+            <div class="border">
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                        <h4>Biology MCQ(Answer all question*)</h4>
+                        <a href="/"><button type="button" class="btn btn-primary">Home</button></a>
+                    </div>
+
+                </div>
+                <form action="thank" method="post">
+                    {% csrf_token %}
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.1</h3>
+                        <h5 class="mt-1 ml-2">Find the odd one out?</h5>
+                    </div>
+                    <div class="ans ml-2" >
+                        <label class="radio"> <input type="radio" name="qno1" value='roots' required=""> <span>roots</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno1" value='leaves' required=""> <span>leaves</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno1" value='climber' required=""> <span>climber</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno1" value='stem' required=""> <span>stem</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.2</h3>
+                        <h5 class="mt-1 ml-2">Which of the following is not a sense organ?</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno2" value='ears' required=""> <span>ears</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno2" value='nose' required=""> <span>nose</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno2" value='tongue' required=""> <span>tongue</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno2" value='hair' required=""> <span>hair</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.3</h3>
+                        <h5 class="mt-1 ml-2">which of the following body part is store house of knowledge?</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno3" value='hands' required=""> <span>hands</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno3" value='eyes' required=""> <span>eyes</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno3" value='heart' required=""> <span>heart</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno3" value='brain' required=""> <span>brain</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.4</h3>
+                        <h5 class="mt-1 ml-2">Beautiful part of a plant?</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno4" value='steam' required=""> <span>stem</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno4" value='leaves' required=""> <span>leaves</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno4" value='flower' required=""> <span>flower</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno4" value='fruits' required=""> <span>fruits</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.5</h3>
+                        <h5 class="mt-1 ml-2">What plants need to make their food?</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno5" value='sun' required=""> <span>sun</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno5" value='water' required=""> <span> water</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno5" value='air' required=""> <span>air</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno5" value='all' required=""> <span>all</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.6</h3>
+                        <h5 class="mt-1 ml-2">Plants grow along with?</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno6" value='creepers' required=""> <span>creepers</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno6" value='seed' required=""> <span>seed</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno6" value='flower' required=""> <span>flower</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno6" value='mud' required=""> <span>mud</span>
+                        </label>
+                        
+
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.7</h3>
+                        <h5 class="mt-1 ml-2">The parts of the body that pumps blood is called?</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno7" value='heart' required=""> <span>heart</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno7" value='kidney' required=""> <span>kidney</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno7" value='nose' required=""> <span>nose</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno7" value='brain' required=""> <span>brain</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.8</h3>
+                        <h5 class="mt-1 ml-2">The stomach is inside the_____?</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno8" value='heart' required=""> <span>heart</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno8" value='lungs' required=""> <span>lungs</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno8" value='belly' required=""> <span>belly</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno8" value='ears' required=""> <span>ears</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.9</h3>
+                        <h5 class="mt-1 ml-2">Which of the body part is not in a pair of our body?</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno9" value='hand' required=""> <span>hand</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno9" value='ear' required=""> <span>ear</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno9" value='tongue' required=""> <span>tongue</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno9" value='leg' required=""> <span>leg</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.10</h3>
+                        <h5 class="mt-1 ml-2">Arrange the jumbled words for unlsg?</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno10" value='ears' required=""> <span>ears</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno10" value='membrane' required=""> <span>membrane</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno10" value='kidney' required=""> <span>kidney</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno10" value='lungs' required=""> <span>lungs</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                        <input type="submit" class="btn btn-primary border-success align-items-center btn-success" placeholder="checkresult">
+                        </div>
+                </div>
+                </form>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

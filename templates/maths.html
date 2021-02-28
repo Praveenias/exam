@@ -1,0 +1,129 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Testpress</title>
+        <link href="{% static 'mcq.css' %}" rel="stylesheet" type="text/css" media="all" />
+        <script src="https://stackpath.bootstrapcdn.com /bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+
+<body>
+<div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-10 col-lg-10">
+            <div class="border">
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                        <h4>Mathematics MCQ(Answer all question*)</h4>
+                        <a href="/"><button type="button" class="btn btn-primary">Home</button></a>
+                    </div>
+
+                </div>
+                <form action="thank" method="post">
+                    {% csrf_token %}
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.1</h3>
+                        <h5 class="mt-1 ml-2">1+1==</h5>
+                    </div>
+                    <div class="ans ml-2" >
+                        <label class="radio"> <input type="radio" name="qno1" value='2' required=""> <span>2</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno1" value=3 required=""> <span>3</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno1" value=4 required=""> <span>4</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno1" value=5 required=""> <span>5</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.2</h3>
+                        <h5 class="mt-1 ml-2">10/2==</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno2" value=5 required=""> <span>5</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno2" value=4 required=""> <span>4</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno2" value=3 required=""> <span>3</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno2" value=2 required=""> <span>2</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.3</h3>
+                        <h5 class="mt-1 ml-2">5+5==</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno3" value=9 required=""> <span>9</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno3" value=10 required=""> <span>10</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno3" value=11 required=""> <span>11</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno3" value=12 required=""> <span>12</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.4</h3>
+                        <h5 class="mt-1 ml-2">20+20==</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno4" value=20 required=""> <span>20</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno4" value=30 required=""> <span>30</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno4" value=40 required=""> <span>40</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno4" value=50 required=""> <span>50</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.5</h3>
+                        <h5 class="mt-1 ml-2">100/25==</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno5" value=2 required=""> <span>2</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno5" value=10 required=""> <span>10</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno5" value=8 required=""> <span>8</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno5" value=4 required=""> <span>4</span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.6</h3>
+                        <h5 class="mt-1 ml-2">500+500==</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="qno6" value='1500' required=""> <span>1500</span>
+                        </label>         
+                        <label class="radio"> <input type="radio" name="qno6" value='1000' required=""> <span>1000</span>
+                        </label>
+                        <label class="radio"> <input type="radio" name="qno6" value='100000' required=""> <span>100000</span>
+                        </label>                  
+                        <label class="radio"> <input type="radio" name="qno6" value='100' required=""> <span>100</span>
+                        </label>
+                        <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                        <input type="submit" class="btn btn-primary border-success align-items-center btn-success" placeholder="checkresult">
+                        </div>
+
+                    </div>
+                </div>
+                </form>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
